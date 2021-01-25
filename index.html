@@ -16,8 +16,11 @@
             <br>
             <input type="password"  placeholder="password" name="" id="">
             <br><br>
-            <button class="btn btn-success" >Enter</button>
+            <button id="login" class="btn btn-success" >Enter</button>
         </div>
+    </div>
+    <div id="transaction-area">
+        <h1>Transaction Area</h1>
     </div>
     <script>
 
@@ -25,6 +28,8 @@
         loginBtn.addEventListener("click", function(){
             const loginArea = document.getElementById("login-area");
             loginArea.style.display = "none";
+            const transactionArea = document.getElementById("transaction-area");
+            transactionArea.style.display = "block";
         })
 
     </script>
